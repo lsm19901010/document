@@ -1,24 +1,26 @@
-git clone https://github.com/lsm19901010/gitDestription.git #´ÓÔ¶¶ËÏÂÔØ²Ö¿âµ½±¾µØ²Ö¿â
-git remote add origin https://github.com/lsm19901010/gitDestription #½«±¾µØ²Ö¿âÍÆËÍµ½Ô¶¶Ë
-git push -u origin master #¼ÓÉÏÁË ¨Cu²ÎÊıGit²»µ«»á°Ñ±¾µØµÄmaster·ÖÖ§ÄÚÈİÍÆËÍµÄÔ¶³ÌĞÂµÄmaster·ÖÖ§£¬»¹»á°Ñ±¾µØµÄmaster·ÖÖ§ºÍÔ¶³ÌµÄmaster·ÖÖ§¹ØÁªÆğÀ´
-git push origin master #½«±¾µØÎÄ¼şÌá½»µ½Ô¶¶Ë Ìá½»Ç°ÏÈcommitµ½±¾µØ¿â
-git pull origin master #½«Ô¶¶Ë²Ö¿âÄÚÈİÍ¬²½µ½±¾µØ
-git add . #Ìí¼ÓËùÓĞÎÄ¼şµ½Ôİ´æÇø
-git add <file> Ìí¼Óµ¥¸öÎÄ¼şµ½Ôİ´æÇø
-git commit . -m "ËµÃ÷" #½«Ôİ´æÇøËùÓĞÎÄ¼şÌá½»µ½±¾µØ²Ö¿â
-git commit <file> -m "ËµÃ÷" #½«Ôİ´æÇøµ¥¸öÎÄ¼şÌá½»µ½±¾µØ²Ö¿â
-git log #²é¿´Ìá½»°æ±¾ÀúÊ·
-git log --pretty=oneline #²é¿´°æ±¾id
+git clone https://github.com/lsm19901010/gitDestription.git #ä»è¿œç«¯ä¸‹è½½ä»“åº“åˆ°æœ¬åœ°ä»“åº“
+git remote add origin https://github.com/lsm19901010/gitDestription #å°†æœ¬åœ°ä»“åº“æ¨é€åˆ°è¿œç«¯
+git push -u origin master #åŠ ä¸Šäº† â€“uå‚æ•°Gitä¸ä½†ä¼šæŠŠæœ¬åœ°çš„masteråˆ†æ”¯å†…å®¹æ¨é€çš„è¿œç¨‹æ–°çš„masteråˆ†æ”¯ï¼Œè¿˜ä¼šæŠŠæœ¬åœ°çš„masteråˆ†æ”¯å’Œè¿œç¨‹çš„masteråˆ†æ”¯å…³è”èµ·æ¥
+git push origin master #å°†æœ¬åœ°æ–‡ä»¶æäº¤åˆ°è¿œç«¯ æäº¤å‰å…ˆcommitåˆ°æœ¬åœ°åº“
+git pull origin master #å°†è¿œç«¯ä»“åº“å†…å®¹åŒæ­¥åˆ°æœ¬åœ°
+git add . #æ·»åŠ æ‰€æœ‰æ–‡ä»¶åˆ°æš‚å­˜åŒº
+git add <file> æ·»åŠ å•ä¸ªæ–‡ä»¶åˆ°æš‚å­˜åŒº
+git commit . -m "è¯´æ˜" #å°†æš‚å­˜åŒºæ‰€æœ‰æ–‡ä»¶æäº¤åˆ°æœ¬åœ°ä»“åº“
+git commit <file> -m "è¯´æ˜" #å°†æš‚å­˜åŒºå•ä¸ªæ–‡ä»¶æäº¤åˆ°æœ¬åœ°ä»“åº“
+git log #æŸ¥çœ‹æäº¤ç‰ˆæœ¬å†å²
+git log --pretty=oneline #æŸ¥çœ‹ç‰ˆæœ¬id
 git log --graph --pretty=oneline --abbrev-commit
-git reset --hard HEAD^^ #»ØÍËµ½ÉÏÒ»°æ±¾
-git reset --hard <°æ±¾IDÇ°¼¸Î»> #»ØÍËµ½Ö¸¶¨°æ±¾
-git checkout -b local #´´½¨²¢ÇĞ»»·ÖÖ§ Ïàµ±ÓÚgit branch local + git checkout local
-git branch #²é¿´·ÖÖ§
-git checkout master #ÇĞ»»·ÖÖ§
-git merge dev #ºÏ²¢·ÖÖ§ ÔÚmaster·ÖÖ§ÉÏÖ´ĞĞ£¬½«dev·ÖÖ§ºÏ²¢µ½master
-git branch -d dev #É¾³ıdev·ÖÖ§
-git stash #Òş²Ø¹¤×÷ÏÖ³¡ ÎªÁËÔÚÖ÷·ÖÖ§ÏÂ×öÆäËû¹¤×÷
-git stash list #²é¿´Òş²ØÇø
-git stash pop #»Ö¸´Òş²ØÇøÍ¬Ê±É¾³ıÒş²ØÇø
-git stash apply #»Ö¸´Òş²ØÇø
-git stash drop #É¾³ıÒş²ØÇø
+git reset --hard HEAD^^ #å›é€€åˆ°ä¸Šä¸€ç‰ˆæœ¬
+git reset --hard <ç‰ˆæœ¬IDå‰å‡ ä½> #å›é€€åˆ°æŒ‡å®šç‰ˆæœ¬
+git checkout -b local #åˆ›å»ºå¹¶åˆ‡æ¢åˆ†æ”¯ ç›¸å½“äºgit branch local + git checkout local
+git branch #æŸ¥çœ‹åˆ†æ”¯
+git checkout master #åˆ‡æ¢åˆ†æ”¯
+git merge dev #åˆå¹¶åˆ†æ”¯ åœ¨masteråˆ†æ”¯ä¸Šæ‰§è¡Œï¼Œå°†devåˆ†æ”¯åˆå¹¶åˆ°master
+git branch -d dev #åˆ é™¤devåˆ†æ”¯
+git stash #éšè—å·¥ä½œç°åœº ä¸ºäº†åœ¨ä¸»åˆ†æ”¯ä¸‹åšå…¶ä»–å·¥ä½œ
+git stash list #æŸ¥çœ‹éšè—åŒº
+git stash pop #æ¢å¤éšè—åŒºåŒæ—¶åˆ é™¤éšè—åŒº
+git stash apply #æ¢å¤éšè—åŒº
+git stash drop #åˆ é™¤éšè—åŒº
+git remote #æŸ¥çœ‹è¿œç¨‹åº“ä¿¡æ¯
+git remote â€“v #æŸ¥çœ‹è¿œç¨‹åº“è¯¦ç»†ä¿¡æ¯
