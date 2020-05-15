@@ -17,3 +17,8 @@ git branch #查看分支
 git checkout master #切换分支
 git merge dev #合并分支 在master分支上执行，将dev分支合并到master
 git branch -d dev #删除dev分支
+git stash #隐藏工作现场 为了在主分支下做其他工作
+git stash list #查看隐藏区
+git stash pop #恢复隐藏区同时删除隐藏区
+git stash apply #恢复隐藏区
+git stash drop #删除隐藏区
