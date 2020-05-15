@@ -42,3 +42,7 @@ END;
   END GET_ERROR_DESC;
 --列转行 
 SELECT * FROM TABLE (SELECT SPLITSTR_ROWS('1,2,3', ',') FROM DUAL);
+--按segment分组排序
+SELECT row_number() over(partition by s.segment1 order by s.creation_date) rn,
+       s.*
+  FROM po_headers_all s
