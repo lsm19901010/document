@@ -46,3 +46,18 @@ SELECT * FROM TABLE (SELECT SPLITSTR_ROWS('1,2,3', ',') FROM DUAL);
 SELECT row_number() over(partition by s.segment1 order by s.creation_date) rn,
        s.*
   FROM po_headers_all s
+--递归
+--递归查询 
+--向上
+select * from
+mtl_item_category_new m
+/*where m.flex_value_set_id=1*/
+start with m.flex_value='50003701'
+connect by prior m.parent_flex_value_low =m.flex_value;
+
+--向下
+select * from
+mtl_item_category_new m
+/*where m.flex_value_set_id=1*/
+start with m.flex_value='50003681'
+connect by prior m.flex_value =m.parent_flex_value_low;
